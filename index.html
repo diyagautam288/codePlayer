@@ -1,0 +1,42 @@
+<html lang="en">
+    <head>
+        <title>Code Player</title>
+        <link href="style.css" rel="stylesheet" type="text/css">
+        <script type="text/javascript" src="jquery-2.1.1.min.js"></script>
+        <script type="text/javascript" src="jquery-ui-1.12.1/jquery-ui.js"></script>
+    </head>
+    <body>
+        <div id="container">
+            <header>
+                <div id="heading">CodePlayer</div>
+                <div id="button">
+                    <button id="run">RUN</button>
+                </div>
+                <ul id="toggles">
+                    <li class="toggle selected">HTML</li>
+                    <li class="toggle">JS</li>
+                    <li class="toggle">CSS</li>
+                    <li class="toggle selected" style="border: none">RESULT</li>
+                </ul>
+            </header>
+            <div id="clear"></div>
+            <div class="codeContainer" id="HTMLC">
+                <div  class="codeLabel">HTML</div>
+               <textarea id="htmlCode"><div id="test"></div></textarea>
+            </div>
+            <div class="codeContainer" id="CSSC">
+                <div  class="codeLabel">CSS</div>
+               <textarea id="cssCode">CODE</textarea>
+            </div>
+            <div class="codeContainer" id="JSC">
+                <div  class="codeLabel">JS</div>
+               <textarea id="jsCode">document.getElementById("test").innerHTML="It's working";</textarea>
+            </div>
+            <div class="codeContainer" id="RESULTC">
+                <div  class="codeLabel">RESULT</div>
+               <iframe id="resultFrame"></iframe>
+            </div>
+        </div>
+        <script type="text/javascript" src="script.js" ></script>
+    </body>
+</html>
